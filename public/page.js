@@ -54,6 +54,7 @@ async function delTodo(id) {
         });
         const data = await result.json();
         alert("Deleted");
+        location.reload();
     } catch (err) {
         console.log(err);
     }
@@ -71,6 +72,7 @@ async function createTodo(body1) {
         });
         const data = await result.json();
         alert("Created");
+        location.reload();
     } catch (err) {
         console.log(err);
     }
@@ -87,6 +89,7 @@ async function editTodo(id, body1) {
         });
         const data = await result.json();
         alert("todo edited");
+        location.reload();
     } catch (err) {
         console.log(err);
     }
